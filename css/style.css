@@ -1,0 +1,2249 @@
+/* === === === home-page-style === === === */
+
+*{
+
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+
+}
+
+/* === body === */
+
+body{
+
+    width: 100%;
+    /* height: 200vh; */
+    background-color: #F7F7F8 ;
+    overflow-x: hidden !important;
+
+}
+
+/* === scroll-bar === */
+
+::-webkit-scrollbar {
+    width: 0.75rem;
+}
+
+::-webkit-scrollbar-track {
+    border: 10px solid #FFFFFF;
+    box-shadow: inset 0 0 2.5px 2px #EDF2F4;
+    border-radius: 1px;
+    -webkit-border-radius: 0.1px;
+    -moz-border-radius: 1px;
+    -ms-border-radius: 1px;
+    -o-border-radius: 1px;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #FF9500;
+    opacity: 0.5;
+}
+
+/* === header-style === */
+
+header{
+
+    z-index: 10 !important;
+    position: sticky;
+    top: 0px;
+    width: 100%;
+    padding: 20px;
+    padding-bottom: 0px !important;
+    background-color: #F7F7F8;
+    border-bottom: 1px solid #F1F1F3;
+
+}
+
+header .course_offer{
+
+    width: 100%;
+    height: 41px;
+    border-radius: 6px;
+    background-color: #FF9500;
+
+}
+
+header .course_offer a{
+
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #FFFFFF;
+    font-family: "Be Vietnam Pro", sans-serif;
+    font-size: 14px;
+
+}
+
+header .course_offer a span{
+
+    margin-right: 23px;
+
+}
+
+/* === nav-style === */
+
+nav{
+
+    position: relative;
+    width: 100%;
+    height: 81px;
+    padding: 0 60px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+
+nav .logo_navbar{
+
+    display: flex;
+    align-items: center;
+
+}
+
+nav .logo_navbar .logo{
+
+    width: 44px;
+    height: 45px;
+    margin-right: 50px;
+
+}
+
+nav .logo_navbar .navbar ul{
+
+    display: flex;
+
+}
+
+nav .logo_navbar .navbar ul li{
+
+    width: 78px;
+    height: 45px;
+    margin-right: 26px;
+    border-radius: 6px;
+    transition: 0.3s;
+
+}
+
+nav .logo_navbar .navbar ul li:hover{
+
+    background-color: #F1F1F3;
+
+}
+
+.active{
+
+    background-color: #F1F1F3;
+
+}
+
+nav .logo_navbar .navbar ul li a{
+
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 14px;
+    font-family: "Be Vietnam Pro", sans-serif;
+    color: #262626;
+
+}
+
+/* === signup-login-style === */
+
+.signup_login{
+
+    display: flex;
+    align-items: center;
+
+}
+
+.signup_login a{
+
+    width: 86px;
+    height: 45px;
+    margin-left: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 14px;
+    font-family: "Be Vietnam Pro", sans-serif;
+    border-radius: 6px;
+    transition: 0.3s;
+
+}
+
+.signup_login .login{
+
+    background-color: #FF9500;
+    color: #FFFFFF;
+
+}
+
+.signup_login .signup{
+
+    color: #262626;
+
+}
+
+/* nav-bar-phone */
+
+.signup_login .navbar_phone{
+
+    width: 34px;
+    height: 34px;
+    margin-left: 20px;
+    padding: 8px 0px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    display: none;
+
+}
+
+.signup_login .navbar_phone .span_container{
+
+    position: relative;
+    width: 22.5px;
+    height: 18px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: space-between;
+    overflow: hidden;
+
+}
+
+.signup_login .navbar_phone span{
+
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    background-color: #262626;
+    border-radius: 2px;
+    transition: 0.5s;
+
+}
+
+.signup_login .navbar_phone .bottom_span{
+
+    transform: translateY(0%);
+    width: 11.25px;
+    top: 90%;
+
+}
+
+.signup_login .navbar_phone  .top_span{
+
+    top: 0%;
+    left: 0%;
+
+}
+
+.signup_login .navbar_phone .middle_span{
+
+    top: 50%;
+    left: 0%;
+    transform: translate(0% , -50%);
+
+}
+
+.navbar_phone_content{
+
+    position: absolute;
+    top: 80%;
+    right: 0px;
+    width: 100%;
+    border: 1px solid #F1F1F3;
+    border-bottom-left-radius: 6px;
+    border-bottom-right-radius: 6px;
+    background-color: #F7F7F8;
+    box-shadow: 0px 5px 10px #1a1a1a1a;
+    transition: 0.5s;
+    visibility: hidden;
+    opacity: 0;
+
+}
+
+.navbar_phone_content ul li{
+
+    width: 100%;
+    height: 50px;
+    border-top: 1px solid #F1F1F3;
+    transition: 0.3s;
+
+}
+
+.navbar_phone_content ul li a{
+
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 14px;
+    font-family: "Be Vietnam Pro", sans-serif;
+    color: #262626;
+
+}
+
+.navbar_phone_content ul li a:focus{
+
+    background-color: transparent;
+
+}
+
+/* === main === */
+
+main{
+
+    width: 100%;
+    padding-top: 80px;
+    margin-bottom: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+main .main_container{
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+main .main_container .main_title{
+
+    position: relative;
+    width: 643px;
+    height: 78px;
+    margin-bottom: 16px;
+    padding-left: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    background-color: #FCFCFD;
+    border: 1px solid #F1F1F3;
+    border-radius: 8px;
+
+}
+
+main .main_container .main_title span , main .main_container .main_title p{
+
+    font-size: 36px;
+    font-weight: 600;
+    font-family: "Be Vietnam Pro", sans-serif;
+    color: #1A1A1A;
+
+}
+
+main .main_container .main_title span{
+
+    margin-left: 10px;
+    color: #FF9500;
+
+}
+
+main .main_container .main_title .abstract_line{
+
+    position: absolute;
+    bottom: 77%;
+    right: 98%;
+
+}
+
+main .main_container .main_explain{
+
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+main .main_container .main_explain p{
+
+    font-family: "Be Vietnam Pro", sans-serif;
+    font-size: 28px;
+    font-weight: 500;
+    color: #262626;
+    line-height: 150%;
+
+}
+
+main .main_container .main_explain span{
+
+    margin-top: 6px;
+    font-family: "Be Vietnam Pro", sans-serif;
+    font-size: 16px;
+    color: #262626;
+    line-height: 150%;
+
+}
+
+main .main_container .main_buttons{
+
+    width: 100%;
+    padding-top: 50px;
+    display: flex;
+    /* align-items: center; */
+    justify-content: center;
+
+}
+
+main .main_container .main_buttons a{
+
+    width: 154px;
+    height: 49px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 6px;
+    font-size: 14px;
+    font-weight: 600;
+    font-family: "Be Vietnam Pro", sans-serif;
+
+}
+
+main .main_container .main_buttons .exp_course{
+
+    margin-right: 12px;
+    color: #FFFFFF;
+    background-color: #FF9500;
+
+}
+
+main .main_container .main_buttons .view_pricing{
+
+    color: #262626;
+    background-color: #FFFFFF;
+    border: 1px solid #F1F1F3;
+
+}
+
+/* === sponsors-bar-style === */
+
+.sponsors{
+
+    width: 83.2%;
+    height: 116px;
+    margin: auto;
+    margin-bottom: 80px !important;
+    padding: 24px;
+    display: flex;
+    border-radius: 8px;
+    background-color: #FCFCFD;
+    border: 1px solid #F1F1F3;
+    overflow-x: scroll;
+    overflow-y: hidden;
+
+}
+
+.sponsors::-webkit-scrollbar{
+
+    display: none;
+
+}
+
+.sponsors .sponsors_container{
+
+    height: 100%;
+    display: flex;
+    align-items: center;
+
+}
+
+.sponsors .sponsors_container .sponsors_logo{
+
+    width: 175.86px;
+    height: 68px;
+    border-right: 1px solid #F1F1F3;
+    overflow: hidden;
+
+}
+
+.sponsors .sponsors_container .sponsor_7{
+
+    border-right: none;
+
+}
+
+/* === intro-video-style === */
+
+.intro_video{
+
+    position: relative;
+    width: 83.2%;
+    margin: auto;
+    margin-bottom: 100px !important;
+    border-radius: 14px;
+    overflow: hidden;
+
+}
+
+.intro_video video{
+
+    width: 100%;
+
+}
+
+.intro_video .start_control{
+
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50% , -50%);
+    cursor: pointer;
+
+}
+
+/* === benefits-style === */
+
+.benefits , 
+.our_courses ,
+.our_pricing{
+
+    width: 83.2%;
+    margin: auto;
+    margin-bottom: 100px !important;
+
+}
+
+.benefits .benefits_title , 
+.our_courses .our_courses_title , 
+.testimonials .testimonials_title ,
+.our_pricing .our_pricing_title{
+
+    position: relative;
+    width: 100%;
+    margin-bottom: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+
+.benefits .benefits_title .benefits_title_right_side , 
+.our_courses .our_courses_title .our_courses_title_right_side ,
+.testimonials .testimonials_title .testimonials_title_right_side , 
+.our_pricing .our_pricing_title .our_pricing_title_right_side{
+
+    width: 933px;
+
+}
+
+.benefits .benefits_title .benefits_title_right_side h3 , 
+.our_courses .our_courses_title .our_courses_title_right_side h3 , 
+.testimonials .testimonials_title .testimonials_title_right_side h3 ,
+.our_pricing .our_pricing_title .our_pricing_title_right_side h3{
+
+    font-size: 38px;
+    font-weight: 600;
+    line-height: 150%;
+    color: #262626;
+    font-family: "Be Vietnam Pro", sans-serif;
+
+}
+
+.benefits .benefits_title .benefits_title_right_side p , 
+.our_courses .our_courses_title .our_courses_title_right_side p ,
+.testimonials .testimonials_title .testimonials_title_right_side p ,
+.our_pricing .our_pricing_title .our_pricing_title_right_side p{
+
+    width: 100%;
+    font-size: 16px;
+    line-height: 150%;
+    color: #59595A;
+    font-family: "Be Vietnam Pro", sans-serif;
+
+}
+
+.view_all_button{
+
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 96px;
+    height: 49px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 14px;
+    font-weight: 500;
+    font-family: "Be Vietnam Pro", sans-serif;
+    color: #262626;
+    background-color: #FCFCFD;
+    border: 1px solid #F1F1F3;
+    border-radius: 6px;
+
+}
+
+.benefits_cards_container{
+
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+
+}
+
+.benefits_cards_container .benefits_card{
+
+    width: 413px;
+    margin-bottom: 13px;
+    padding: 40px;
+    border-radius: 10px;
+    background-color: #FFFFFF;
+
+}
+
+.benefits_cards_container .benefits_card .benefits_card_number{
+
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+
+}
+
+.benefits_cards_container .benefits_card .benefits_card_number span{
+
+    font-size: 60px;
+    font-weight: 700;
+    line-height: 24px;
+    color: #262626;
+    font-family: "Be Vietnam Pro", sans-serif;
+
+}
+
+.benefits_cards_container .benefits_card .benefits_card_explane{
+
+    width: 100%;
+    margin: 40px 0px;
+
+}
+
+.benefits_cards_container .benefits_card .benefits_card_explane h5{
+
+    margin-bottom: 10px;
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 150%;
+    color: #333333;
+    font-family: "Be Vietnam Pro", sans-serif;
+
+}
+
+.benefits_cards_container .benefits_card .benefits_card_explane p{
+
+    font-size: 16px;
+    line-height: 150%;
+    color: #4C4C4D;
+    font-family: "Be Vietnam Pro", sans-serif;
+
+}
+
+.benefits_cards_container .benefits_card .benefits_card_btn{
+
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+
+}
+
+/* === our-courses-style === */
+
+.our_courses_cards_container{
+
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+
+}
+
+.our_courses_cards_container .our_courses_cards{
+
+    width: 625px;
+    padding: 40px;
+    margin-bottom: 15px;
+    border-radius: 10px;
+    border: 1px solid #F1F1F3;
+    background-color: #FFFFFF;
+
+}
+
+.our_courses_img{
+
+    width: 100%;
+    height: 266px;
+    margin-bottom: 24px;
+    border-radius: 8px;
+    overflow: hidden;
+
+}
+
+.our_courses_img img{
+
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+
+}
+
+.our_courses_details{
+
+    width: 100%;
+    margin-bottom: 24px;
+
+}
+
+.our_courses_details .time_creator{
+
+    width: 100%;
+    margin-bottom: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+
+.our_courses_details .time_creator .time_requirements{
+
+    display: flex;
+
+}
+
+.our_courses_details .time_creator .time_requirements span{
+
+    width: 86px;
+    height: 34px;
+    margin-right: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 14px;
+    color: #4C4C4D;
+    border-radius: 6px;
+    background-color: #FFFFFF;
+    border: 1px solid #F1F1F3;
+    font-family: "Be Vietnam Pro", sans-serif;
+
+}
+
+.our_courses_details .time_creator p{
+
+    font-size: 16px;
+    font-weight: 500;
+    color: #262626;
+    font-family: "Be Vietnam Pro", sans-serif;
+
+}
+
+.our_courses_details .course_details{
+
+    width: 100%;
+
+}
+
+.our_courses_details .course_details h3{
+
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 150%;
+    color: #262626;
+    font-family: "Be Vietnam Pro", sans-serif;
+
+}
+
+.our_courses_details .course_details p{
+
+    font-size: 14px;
+    line-height: 150%;
+    color: #4C4C4D;
+    font-family: "Be Vietnam Pro", sans-serif;
+
+}
+
+.our_courses_cards .our_courses_git{
+
+    width: 100%;
+    height: 49px;
+    border-radius: 6px;
+    background-color: #F7F7F8;
+    border: 1px solid #F1F1F3;
+
+}
+
+.our_courses_cards .our_courses_git a{
+
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 14px;
+    font-weight: 500;
+    color: #262626;
+    font-family: "Be Vietnam Pro", sans-serif;
+
+}
+
+/* === testimonials-style === */
+
+.testimonials{
+
+    width: 83.2%;
+    margin: auto;
+    margin-bottom: 100px !important;
+
+}
+
+.testimonials_cards_container{
+
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+}
+
+.testimonials_card{
+
+    width: 625px;
+    margin-bottom: 13px;
+    border-radius: 10px;
+    background-color: #FFFFFF;
+    border: 1px solid #F1F1F3;
+    overflow: hidden;
+
+}
+
+.testimonials_card .about_testimonials{
+
+    width: 100%;
+    padding: 20px;
+    border-bottom: 1px solid #F1F1F3;
+
+}
+
+.testimonials_card .about_testimonials p{
+
+    font-size: 16px;
+    line-height: 150%;
+    color: #4C4C4D;
+    font-family: "Be Vietnam Pro", sans-serif;
+
+}
+
+.testimonials_card .img_read_more{
+
+    width: 100%;
+    padding: 24px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #FCFCFD;
+
+}
+
+.testimonials_card .img_read_more .testimonials_img_name{
+
+    display: flex;
+    align-items: center;
+
+}
+
+.testimonials_card .img_read_more .testimonials_img_name .testimonials_img{
+
+    width: 50px;
+    height: 50px;
+    margin-right: 10px;
+    border-radius: 6px;
+    overflow: hidden;
+
+}
+
+.testimonials_card .img_read_more .testimonials_img_name .testimonials_img img{
+
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+
+}
+
+.testimonials_card .img_read_more .testimonials_img_name p{
+
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 150%;
+    color: #333333;
+    font-family: "Be Vietnam Pro", sans-serif;
+
+}
+
+.testimonials_card .img_read_more a{
+
+    width: 137px;
+    height: 49px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 6px;
+    font-size: 14px;
+    font-weight: 500;
+    color: #262626;
+    font-family: "Be Vietnam Pro", sans-serif;
+    background-color: #F7F7F8;
+    border: 1px solid #F1F1F3;
+
+}
+
+/* === pricing-style === */
+
+.pricing_time_container{
+
+    position: absolute;
+    bottom: 0px;
+    right: 0px;
+
+}
+
+.pricing_time{
+
+    position: relative;
+    height: 69px;
+    padding: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 8px;
+    background-color: #FFFFFF;
+    z-index: 1;
+
+}
+
+.pricing_time .bg_plane{
+
+    position: absolute;
+    top: 12px;
+    left: 12px;
+    width: 104px;
+    height: 45px;
+    border-radius: 6px;
+    background-color: #FF9500;
+    transition: 0.3s;
+    z-index: 0;
+
+}
+
+.pricing_time button{
+
+    width: 104px;
+    height: 45px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    border-radius: 6px;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 150%;
+    font-family: "Be Vietnam Pro", sans-serif;
+    background-color: transparent;
+    cursor: pointer;
+    transition: 0.3s;
+    z-index: 2;
+
+}
+
+.pricing_time .monthly{
+
+    color: #FFFFFF;
+
+}
+
+.pricing_time .yearly{
+
+    color: #4C4C4D;
+
+}
+
+.our_pricing .pricing_planes_container{
+
+    width: 100%;
+    padding: 50px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 12px;
+    background-color: #FFFFFF;
+
+}
+
+.pricing_plans_card{
+
+    width: 570px;
+    padding: 40px 24px;
+    border-radius: 12px;
+    border: 1px solid #F1F1F3;
+    background-color: #FCFCFD;
+
+}
+
+.pricing_plans_card .free_pro_plane{
+
+    width: 100%;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 4px;
+    border: 1px solid #FFEACC;
+    background-color: #FFF9F0;
+    cursor: pointer;
+
+}
+
+.pricing_plans_card .free_pro_plane p{
+
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 169%;
+    color: #262626;
+    font-family: "Be Vietnam Pro", sans-serif;
+
+}
+
+.pricing_card_price{
+
+    width: 100%;
+    margin: 50px 0px;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    font-family: "Be Vietnam Pro", sans-serif;
+
+}
+
+.pricing_card_price p{
+
+    font-size: 60px;
+    font-weight: 600;
+    line-height: 73%;
+    color: #262626;
+
+}
+
+.pricing_card_price span{
+
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 73%;
+    color: #4C4C4D;
+
+}
+
+.pricing_plans_card .available_features{
+
+    width: 100%;
+    padding: 30px;
+    border-top-left-radius: 14px;
+    border-top-right-radius: 14px;
+    border: 1px solid #F1F1F3;
+    background-color: #FFFFFF;
+
+}
+
+.available_features_title{
+
+    width: 100%;
+    text-align: center;
+    margin-bottom: 24px;
+
+}
+
+.available_features_title p{
+
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 150%;
+    color: #262626;
+    font-family: "Be Vietnam Pro", sans-serif;
+
+}
+
+.available_features_container{
+
+    width: 100%;
+    padding: 0px 30px;
+
+}
+
+.available_features_card{
+
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+    border-radius: 6px;
+    border: 1px solid #F1F1F3;
+
+}
+
+.available_icon{
+
+    height: 24px;
+    margin-right: 8px;
+
+}
+
+.available_features_card p{
+
+    font-size: 14px;
+    line-height: 150%;
+    color: #4C4C4D;
+    font-family: "Be Vietnam Pro", sans-serif;
+
+}
+
+.get_started{
+
+    width: 100%;
+    height: 57px;
+    border-bottom-left-radius: 14px;
+    border-bottom-right-radius: 14px;
+    background-color: #FF9500;
+
+}
+
+.get_started a{
+
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 150%;
+    color: #FFFFFF;
+    font-family: "Be Vietnam Pro", sans-serif;
+
+}
+
+/* === footer-style === */
+
+footer{
+
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: #FFFFFF;
+
+}
+
+footer .footer_container{
+
+    width: 100%;
+    padding: 60px 80px;
+    padding-bottom: 30px !important;
+    display: flex;
+    justify-content: space-between;
+
+}
+
+footer .property{
+
+    width: 100%;
+    padding: 30px 0px;
+    border: 1px solid #F1F1F3;
+
+}
+
+.logo_contact .footer_logo{
+
+    height: 44px;
+    margin-bottom: 30px;
+
+}
+
+.contact_det{
+
+    margin-bottom: 14px;
+    display: flex;
+    align-items: center;
+
+}
+
+.last_contact{
+
+    margin-bottom: 0px !important;
+
+}
+
+.contact_det .contact_det_icon{
+
+    height: 20px;
+    margin-right: 4px;
+
+}
+
+.contact_det p{
+
+    font-size: 16px;
+    line-height: 150%;
+    color: #262626;
+    font-family: "Be Vietnam Pro", sans-serif;
+
+}
+
+.home_about_social{
+
+    display: flex;
+    flex-wrap: wrap;
+
+}
+
+.home_links ,
+.about_links ,
+.social_links{
+
+    width: 225px;
+
+}
+
+.footer_links_title{
+
+    margin-bottom: 10px;
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 150%;
+    color: #262626;
+    font-family: "Be Vietnam Pro", sans-serif;
+
+}
+
+.footer_link{
+
+    margin-bottom: 8px;
+    display: block;
+    font-size: 16px;
+    line-height: 150%;
+    color: #59595A;
+    font-family: "Be Vietnam Pro", sans-serif;
+
+}
+
+.last_link{
+
+    margin-bottom: 0px !important;
+
+}
+
+.social_links_container{
+
+    display: flex;
+    margin-top: 4px;
+
+}
+
+.social_links_container .social_media_links{
+
+    width: 44px;
+    height: 44px;
+    margin-right: 14px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 6px;
+    border: 1px solid #F1F1F3;
+    background-color: #F7F7F8;
+
+}
+
+.property p{
+
+    width: 100%;
+    text-align: center;
+    font-size: 14px;
+    line-height: 150%;
+    color: #656567;
+    font-family: "Be Vietnam Pro", sans-serif;
+
+}
+
+/* === responsive - style === */
+/* === responsive - style === */
+/* === responsive - style === */
+
+@media (max-width: 1441px){
+
+    /* === benefits-responsive */
+
+    .benefits_cards_container .benefits_card{
+
+        width: 390px !important;
+
+    }
+
+    /* === our-courses-responsive === */
+
+    .our_courses_cards ,
+    .testimonials_card{
+
+        width: 590px !important;
+
+    }
+
+    /* === pricing-responsive === */
+
+    .pricing_plans_card{
+
+        width: 540px !important;
+
+    }
+
+}
+
+@media (max-width: 1025px){
+
+    /* === benefits-courses-responsive */
+
+    .benefits .benefits_title , 
+    .our_courses .our_courses_title ,
+    .testimonials .testimonials_title ,
+    .our_pricing .our_pricing_title{
+
+        flex-direction: column !important;
+        align-items: flex-start !important;
+
+    }
+
+    .benefits .benefits_title .benefits_title_right_side , 
+    .our_courses .our_courses_title .our_courses_title_right_side ,
+    .testimonials .testimonials_title .testimonials_title_right_side ,
+    .our_pricing .our_pricing_title .our_pricing_title_right_side{
+
+        width: 100% !important;
+
+    }
+
+    .benefits .benefits_title .benefits_title_right_side h3 , 
+    .our_courses .our_courses_title .our_courses_title_right_side h3 ,
+    .testimonials .testimonials_title .testimonials_title_right_side h3 ,
+    .our_pricing .our_pricing_title .our_pricing_title_right_side h3{
+
+        font-size: 28px;
+
+    }
+
+    .benefits .benefits_title .benefits_title_right_side p , 
+    .our_courses .our_courses_title .our_courses_title_right_side p ,
+    .testimonials .testimonials_title .testimonials_title_right_side p ,
+    .our_pricing .our_pricing_title .our_pricing_title_right_side p{
+
+        font-size: 14px;
+
+    }
+
+    .view_all_button ,
+    .pricing_time_container{
+
+        position: relative;
+        margin-top: 20px;
+
+    }
+
+    /* === benefits-responsive */
+
+    .benefits_cards_container .benefits_card{
+
+        width: 417px !important;
+
+    }
+
+    /* === our-courses-responsive */
+
+    .our_courses_cards ,
+    .testimonials_card{
+
+        width: 417px !important;
+
+    }
+
+    /* === pricing-responsive === */
+
+    .pricing_planes_container{
+
+        justify-content: center !important;
+
+    }
+
+    .pricing_plans_card{
+
+        margin: 15px 0px !important;
+
+    }
+
+    /* === footer-responsive === */
+
+    .footer_container{
+
+        padding: 60px 40px !important;
+        padding-bottom: 0px !important;
+
+    }
+
+    .home_links ,
+    .about_links ,
+    .social_links{
+
+        width: 200px !important;
+
+    }
+
+}
+
+@media (max-width : 944px) {
+
+    /* === header-responsive ===*/
+
+    header .course_offer a {
+
+        font-size: 11px !important;
+
+    }
+
+    header .course_offer a span{
+
+        margin-right: 5px !important;
+
+    }
+
+    /* === nav-bar-responsive === */
+
+    nav{
+
+        padding-left: 0px !important;
+        padding-right: 0px !important;
+
+    }
+
+    .navbar{
+
+        display: none !important;
+
+    }
+
+    .logo_navbar{
+
+        width: 44px !important;
+
+    }
+
+    .signup_login .navbar_phone{
+
+        display: block !important;
+
+    }
+
+    /* === main-responsive === */
+
+    main .main_container .main_title{
+
+        width: 357px !important;
+
+    }
+
+    main .main_container .main_title p , main .main_container .main_title span{
+
+        font-size: 16px !important;
+
+    }
+
+    main .main_container .main_title .abstract_line{
+
+        bottom: 58% !important;
+        right: 92% !important;
+
+    }
+
+    main .main_container .main_explain{
+
+        width: 297px !important;
+
+    }
+
+    main .main_container .main_explain p{
+
+        font-size: 24px !important;
+        text-align: center !important;
+
+    }
+
+    main .main_container .main_explain span{
+
+        text-align: center !important;
+        font-size: 14px !important;
+
+    }
+
+    .main_buttons{
+
+        width: 293px !important;
+
+    }
+
+    /* === our-courses-responsive === */
+
+    .our_courses_cards_container{
+
+        justify-content: center !important;
+
+    }
+
+    .our_courses_cards{
+
+        padding: 24px !important;
+
+    }
+
+    .our_courses_details .time_creator{
+
+        flex-direction: column !important;
+        align-items: flex-start !important;
+
+    }
+
+    .our_courses_details .time_requirements{
+
+        margin-bottom: 14px !important;
+
+    }
+
+    .our_courses_details .course_details h3{
+
+        font-size: 18px !important;
+
+    }
+
+    /* === testimonials-responsive === */
+
+    .testimonials_cards_container{
+
+        justify-content: center !important;
+
+    }
+
+    .testimonials_img_name p{
+
+        font-size: 14px !important;
+
+    }
+
+    .img_read_more a{
+
+        width: 120px !important;
+
+    }
+
+    /* === pricing-responsive === */
+
+    .pricing_planes_container{
+
+        padding: 25px !important;
+
+    }
+
+    .pricing_plans_card{
+
+        padding: 20px 12px !important;
+
+    }
+
+    .available_features{
+
+        padding: 0px !important;
+
+    }
+
+    .available_features_container{
+
+        padding: 0px 15px !important;
+
+    }
+
+    .available_features_card{
+
+        padding: 12px 6px !important;
+
+    }
+
+    /* === footer-responsive === */
+
+    .footer_container{
+
+        flex-direction: column !important;
+
+    }
+
+    .logo_contact{
+
+        margin-bottom: 30px;
+
+    }
+
+    .home_links ,
+    .about_links ,
+    .social_links{
+
+        width: 2250px !important;
+        margin-bottom: 20px !important;
+
+    }
+
+    .social_links{
+
+        margin-bottom: 0px !important;
+
+    }
+
+}
+
+@media (max-width : 363px){
+
+    /* === nav-bar-responsive === */
+
+    .signup_login a{
+
+        width: 65px !important;
+
+    }
+
+    /* === main-responsive === */
+
+    .main_container{
+
+        width: 83.2% !important;
+
+    }
+
+    main .main_container .main_title{
+
+        width: 100% !important;
+
+    }
+
+    main .main_container .main_title p , main .main_container .main_title span{
+
+        font-size: 11px !important;
+
+    }
+
+    main .main_container .main_title span{
+
+        margin-right: 5px !important;
+
+    }
+
+    main .main_container .main_title .abstract_line{
+
+        bottom: 70% !important;
+        right: 94% !important;
+
+    }
+
+    /* === testimonials-responsive === */
+
+    .img_read_more a{
+
+        width: 80px !important;
+        text-align: center !important;
+        font-size: 12px !important;
+
+    }
+
+    /* === pricing-responsive === */
+
+    .pricing_planes_container{
+
+        padding: 12.5px !important;
+
+    }
+
+    .pricing_plans_card{
+
+        padding: 10px 6px !important;
+
+    }
+
+    .available_features{
+
+        padding: 0px !important;
+
+    }
+
+    .available_features_container{
+
+        padding: 0px 7.5px !important;
+
+    }
+
+    .available_features_card{
+
+        padding: 6px 3px !important;
+
+    }
+
+}
+
+/* ====================================================================================================== */
+
+/* === === === === courses-page-style === === === */
+
+/* ====================================================================================================== */
+
+/* === courses_page_title === */
+
+.courses_page_title{
+
+    width: 100%;
+    margin: 80px 0px;
+    padding-bottom: 40px;
+    display: flex;
+    justify-content: center;
+    border-bottom: 1px solid #E4E4E7;
+
+}
+
+.courses_page_title .courses_page_title_container{
+
+    width: 83.2%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+}
+
+.courses_page_title .courses_page_title_container h3{
+
+    width: 600px;
+    font-size: 38px;
+    font-weight: 600;
+    line-height: 150%;
+    color: #262626;
+    font-family: "Be Vietnam Pro", sans-serif;
+
+}
+
+.courses_page_title .courses_page_title_container p{
+
+    width: 600px;
+    font-size: 16px;
+    line-height: 150%;
+    color: #59595A;
+    font-family: "Be Vietnam Pro", sans-serif;
+
+}
+
+/* === courses-card-style === */
+
+.courses_cards_container{
+
+    width: 83.2%;
+    margin: auto;
+    margin-bottom: 80px !important;
+
+}
+
+.courses_cards_container .courses_card{
+
+    width: 100%;
+    padding: 40px;
+    margin-bottom: 40px;
+    border-radius: 12px;
+    background-color: #FFFFFF;
+
+}
+
+.courses_cards_container .courses_card .courses_card_details{
+
+    width: 100%;
+    margin-bottom: 40px;
+
+}
+
+.courses_cards_container .courses_card .courses_card_details .courses_card_content{
+
+    width: 100%;
+    margin-bottom: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+
+.courses_cards_container .courses_card .courses_card_details .courses_card_content .courses_card_content_details{
+
+    width: 1000px;
+    margin-right: 50px;
+
+}
+
+.courses_cards_container .courses_card .courses_card_details .courses_card_content .courses_card_content_details h4{
+
+    margin-bottom: 6px;
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 150%;
+    color: #262626;
+    font-family: "Be Vietnam Pro", sans-serif;
+
+}
+
+.courses_cards_container .courses_card .courses_card_details .courses_card_content .courses_card_content_details p{
+
+    font-size: 16px;
+    line-height: 150%;
+    color: #59595A;
+    font-family: "Be Vietnam Pro", sans-serif;
+
+}
+
+.courses_cards_container .courses_card .courses_card_details .courses_card_content a{
+
+    height: 49px;
+    padding: 0 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 150%;
+    color: #262626;
+    font-family: "Be Vietnam Pro", sans-serif;
+    border-radius: 8px;
+    border: 1px solid #F1F1F3;
+    background-color: #FCFCFD;
+
+}
+
+.courses_cards_container .courses_card .courses_card_details .courses_card_images{
+
+    width: 100%;
+    margin-bottom: 24px;
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.courses_cards_container .courses_card .courses_card_details .courses_card_images img{
+
+    width: calc(calc(100% / 3) - calc(40px / 3));
+    height: 326px;
+    border-radius: 6px;
+    object-fit: cover;
+    box-shadow: 10px 0px 10px #1a1a1a1a;
+
+}
+
+.courses_card_time_requirements .time_creator{
+
+    width: 100%;
+    margin-bottom: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+
+.courses_card_time_requirements .time_creator .time_requirements{
+
+    display: flex;
+
+}
+
+.courses_card_time_requirements .time_creator .time_requirements span{
+
+    height: 34px;
+    padding: 0px 12px;
+    margin-right: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 14px;
+    color: #4C4C4D;
+    border-radius: 6px;
+    background-color: #FFFFFF;
+    border: 1px solid #F1F1F3;
+    font-family: "Be Vietnam Pro", sans-serif;
+
+}
+
+.courses_card_time_requirements .time_creator p{
+
+    font-size: 16px;
+    font-weight: 500;
+    color: #262626;
+    font-family: "Be Vietnam Pro", sans-serif;
+
+}
+
+.courses_card_curriculum{
+
+    width: 100%;
+    border-radius: 10px;
+    border: 1px solid #F1F1F3;
+
+}
+
+.courses_card_curriculum .curriculum_title{
+
+    width: 100%;
+    height: 67px;
+    padding: 0px 24px;
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid #F1F1F3;
+
+}
+
+.courses_card_curriculum .curriculum_title p{
+
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 150%;
+    color: #262626;
+    font-family: "Be Vietnam Pro", sans-serif;
+
+}
+
+.courses_card_curriculum .curriculum_container{
+
+    width: 100%;
+    padding: 24px 0px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+
+}
+
+.courses_card_curriculum .curriculum_container .curriculum_card{
+
+    width: 220px;
+    height: 110px;
+    padding: 0px 40px;
+    border-left: 1px solid #F1F1F3;
+
+}
+
+.courses_card_curriculum .curriculum_container .curriculum_card h3{
+
+    font-size: 40px;
+    font-weight: 800;
+    line-height: 150%;
+    color: #262626;
+    font-family: "Be Vietnam Pro", sans-serif;
+
+}
+
+.courses_card_curriculum .curriculum_container .curriculum_card p{
+
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 150%;
+    color: #333333;
+    font-family: "Be Vietnam Pro", sans-serif;
+
+}
+
+/* === responsive - style === */
+/* === responsive - style === */
+/* === responsive - style === */
+
+/* === laptop-responsive === */
+
+@media (max-width : 1441px){
+
+    /* === courses-title-responsive */
+
+    .courses_page_title .courses_page_title_container{
+
+        width: 88.3% !important;
+
+    }
+
+    /* === courses-card-responsive === */
+
+    .courses_cards_container .courses_card .courses_card_details .courses_card_content .courses_card_content_details{
+
+        width: 920px !important;
+
+    }
+
+}
+
+@media (max-width : 1025px){
+
+    /* === courses-card-responsive === */
+
+    .courses_cards_container .courses_card .courses_card_details .courses_card_content{
+
+        flex-direction: column !important;
+        align-items: flex-start !important;
+
+    }
+
+    .courses_cards_container .courses_card .courses_card_details .courses_card_images img{
+
+        width: calc(calc(100% / 3) - calc(35px / 3)) !important;
+        height: 276px !important;
+
+    }
+
+    .courses_cards_container .courses_card .courses_card_details .courses_card_content .courses_card_content_details{
+
+        width: 100% !important;
+        margin-bottom: 20px !important;
+
+    }
+
+    .courses_card_curriculum .curriculum_container .curriculum_card{
+
+        width: 250px !important;
+
+    }
+
+}
+
+/* === tablet-responsive === */
+
+@media (max-width : 769px){
+
+    /* === courses-title-responsive === */
+
+    .courses_page_title .courses_page_title_container h3{
+
+        margin-bottom: 20px;
+
+    }
+
+    /* === courses-card-responsive === */
+
+    .courses_cards_container .courses_card .courses_card_details .courses_card_images img{
+
+        width: calc(calc(100% / 3) - calc(20px / 3)) !important;
+        height: 256px !important;
+
+    }
+
+    .courses_card_curriculum .curriculum_container .curriculum_card{
+
+        width: 270px !important;
+        margin-bottom: 20px !important;
+
+    }
+
+}
+
+/* === phone-responsive === */
+
+@media (max-width : 426px){
+
+    /* === courses-title-responsive === */
+
+    .courses_page_title .courses_page_title_container h3{
+
+        width: 95.7% !important;
+        font-size: 25px !important;
+
+    }
+
+    .courses_page_title .courses_page_title_container p{
+
+        width: 95.7% !important;
+        font-size: 13px !important;
+
+    }
+
+    /* === courses-cards-responsive === */
+
+    .courses_card{
+
+        padding: 24px !important;
+
+    }
+
+    .courses_cards_container .courses_card .courses_card_details .courses_card_content .courses_card_content_details h4{
+
+        font-size: 16px !important;
+
+    }
+
+    .courses_cards_container .courses_card .courses_card_details .courses_card_content .courses_card_content_details p{
+
+        font-size: 13px !important;
+
+    }
+
+    .courses_cards_container .courses_card .courses_card_details .courses_card_content a{
+
+        font-size: 13px !important;
+
+    }
+
+    .courses_cards_container .courses_card .courses_card_details .courses_card_images img{
+
+        height: 100px !important;
+
+    }
+
+    .courses_card_time_requirements .time_creator{
+
+        flex-direction: column !important;
+        align-items: flex-start !important;
+
+    }
+
+    .courses_card_time_requirements .time_creator .time_requirements{
+
+        margin-bottom: 16px !important;
+
+    }
+
+    .courses_card_curriculum .curriculum_container{
+
+        padding-bottom: 0px !important;
+        justify-content: center !important;
+
+    }
+
+    .courses_card_curriculum .curriculum_container .curriculum_card{
+
+        width: 80% !important;
+        height: fit-content !important;
+        padding: 20px !important;
+        border-left: none !important;
+        border-bottom: 1px solid #F1F1F3 !important;
+
+    }
+
+    .courses_card_curriculum .curriculum_container .curriculum_card h3{
+
+        font-size: 35px;
+
+    }
+
+    .courses_card_curriculum .curriculum_container .curriculum_card p{
+
+        font-size: 12px;
+
+    }
+
+}
+
+/* ====================================================================================================== */
+
+/* === === === === about-us-page-style === === === */
+
+/* ====================================================================================================== */
+
+/* === about-achievements-goals-style === */
+
+.achievements_goals{
+
+    width: 83.2%;
+    margin: auto;
+    margin-bottom: 80px;
+
+}
+
+.achievements_goals_title{
+
+    width: 100%;
+    margin-bottom: 60px;
+
+}
+
+.achievements_goals_title h3{
+
+    font-size: 30px;
+    font-weight: 500;
+    line-height: 150%;
+    color: #333333;
+    font-family: "Be Vietnam Pro", sans-serif;
+
+}
+
+.achievements_goals p{
+
+    font-size: 16px;
+    line-height: 150%;
+    color: #59595A;
+    font-family: "Be Vietnam Pro", sans-serif;
+
+}
+
+.achievements_goals_cards_container{
+
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+}
+
+.achievements_goals_card{
+
+    width: 625px;
+    padding: 40px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    background-color: #FFFFFF;
+
+}
+
+.achievements_goals_card .card_icon{
+
+    width: 56px;
+    height: 56px;
+    margin-bottom: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 6px;
+    border: 1px solid #FFEACC;
+    background-color: #FFF9F0;
+
+}
+
+.achievements_goals_card h4{
+
+    margin-bottom: 10px;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 150%;
+    color: #262626;
+    font-family: "Be Vietnam Pro", sans-serif;
+
+}
+
+.achievements_goals_card p{
+
+    font-size: 16px;
+    line-height: 150%;
+    color: #59595A;
+    font-family: "Be Vietnam Pro", sans-serif;
+
+}
