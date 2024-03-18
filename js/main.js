@@ -84,7 +84,7 @@ let navBar = `
 
                 <li class="home"><a href="index.html">Home</a></li>
                 <li class="courses"><a href="courses.html">Courses</a></li>
-                <li class="about"><a href="">About Us</a></li>
+                <li class="about"><a href="about.html">About Us</a></li>
                 <li class="price"><a href="">Pricing</a></li>
                 <li class="contact"><a href="">Contact</a></li>
 
