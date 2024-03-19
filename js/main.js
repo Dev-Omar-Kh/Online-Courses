@@ -85,8 +85,8 @@ let navBar = `
                 <li class="home"><a href="index.html">Home</a></li>
                 <li class="courses"><a href="courses.html">Courses</a></li>
                 <li class="about"><a href="about.html">About Us</a></li>
-                <li class="price"><a href="">Pricing</a></li>
-                <li class="contact"><a href="">Contact</a></li>
+                <li class="price"><a href="pricing.html">Pricing</a></li>
+                <li class="contact"><a href="content.html">Contact</a></li>
 
             </ul>
 
@@ -705,6 +705,315 @@ $(".monthly").click(function(){
 
 });
 
+// === pricing-cards ===
+
+const pricingData = [
+
+    {
+
+        id : 1 ,
+        typePlane : "Free Plan" ,
+        price : "$0" ,
+        featuresIcon : [
+
+            `
+
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+
+                    <rect width="24" height="24" rx="4" fill="#FFF4E6"/>
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M17.364 7.32297C17.6276 7.52379 17.6785 7.90027 17.4777 8.16385L11.0777 16.5639C10.9727 16.7016 10.8134 16.7873 10.6407 16.7989C10.4679 16.8105 10.2986 16.7469 10.1761 16.6245L6.57613 13.0245C6.34181 12.7902 6.34181 12.4103 6.57613 12.176C6.81044 11.9416 7.19034 11.9416 7.42465 12.176L10.5392 15.2905L16.5231 7.4366C16.724 7.17302 17.1004 7.12214 17.364 7.32297Z" fill="#262626"/>
+
+                </svg>
+
+            ` ,
+
+            `
+
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+
+                    <rect width="24" height="24" rx="4" fill="#FFF4E6"/>
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M17.364 7.32297C17.6276 7.52379 17.6785 7.90027 17.4777 8.16385L11.0777 16.5639C10.9727 16.7016 10.8134 16.7873 10.6407 16.7989C10.4679 16.8105 10.2986 16.7469 10.1761 16.6245L6.57613 13.0245C6.34181 12.7902 6.34181 12.4103 6.57613 12.176C6.81044 11.9416 7.19034 11.9416 7.42465 12.176L10.5392 15.2905L16.5231 7.4366C16.724 7.17302 17.1004 7.12214 17.364 7.32297Z" fill="#262626"/>
+
+                </svg>
+
+            ` ,
+
+            `
+
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+
+                    <rect width="24" height="24" rx="4" fill="#FFF4E6"/>
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M17.364 7.32297C17.6276 7.52379 17.6785 7.90027 17.4777 8.16385L11.0777 16.5639C10.9727 16.7016 10.8134 16.7873 10.6407 16.7989C10.4679 16.8105 10.2986 16.7469 10.1761 16.6245L6.57613 13.0245C6.34181 12.7902 6.34181 12.4103 6.57613 12.176C6.81044 11.9416 7.19034 11.9416 7.42465 12.176L10.5392 15.2905L16.5231 7.4366C16.724 7.17302 17.1004 7.12214 17.364 7.32297Z" fill="#262626"/>
+
+                </svg>
+
+            ` ,
+
+            `
+
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+
+                    <rect width="24" height="24" rx="4" fill="#FFF4E6"/>
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M17.364 7.32297C17.6276 7.52379 17.6785 7.90027 17.4777 8.16385L11.0777 16.5639C10.9727 16.7016 10.8134 16.7873 10.6407 16.7989C10.4679 16.8105 10.2986 16.7469 10.1761 16.6245L6.57613 13.0245C6.34181 12.7902 6.34181 12.4103 6.57613 12.176C6.81044 11.9416 7.19034 11.9416 7.42465 12.176L10.5392 15.2905L16.5231 7.4366C16.724 7.17302 17.1004 7.12214 17.364 7.32297Z" fill="#262626"/>
+
+                </svg>
+
+            ` ,
+
+            `
+
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+
+                    <rect width="24" height="24" rx="4" fill="#FFF4E6"/>
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M17.364 7.32297C17.6276 7.52379 17.6785 7.90027 17.4777 8.16385L11.0777 16.5639C10.9727 16.7016 10.8134 16.7873 10.6407 16.7989C10.4679 16.8105 10.2986 16.7469 10.1761 16.6245L6.57613 13.0245C6.34181 12.7902 6.34181 12.4103 6.57613 12.176C6.81044 11.9416 7.19034 11.9416 7.42465 12.176L10.5392 15.2905L16.5231 7.4366C16.724 7.17302 17.1004 7.12214 17.364 7.32297Z" fill="#262626"/>
+
+                </svg>
+
+            ` ,
+
+            `
+
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+
+                    <rect x="0.5" y="0.5" width="23" height="23" rx="3.5" stroke="#F1F1F3"/>
+                    <path d="M9.02426 8.17574C8.78995 7.94142 8.41005 7.94142 8.17574 8.17574C7.94142 8.41005 7.94142 8.78995 8.17574 9.02426L11.1515 12L8.17574 14.9757C7.94142 15.2101 7.94142 15.59 8.17574 15.8243C8.41005 16.0586 8.78995 16.0586 9.02426 15.8243L12 12.8485L14.9757 15.8243C15.2101 16.0586 15.59 16.0586 15.8243 15.8243C16.0586 15.59 16.0586 15.2101 15.8243 14.9757L12.8485 12L15.8243 9.02426C16.0586 8.78995 16.0586 8.41005 15.8243 8.17574C15.59 7.94142 15.2101 7.94142 14.9757 8.17574L12 11.1515L9.02426 8.17574Z" fill="#262626"/>
+
+                </svg>
+
+            ` ,
+
+            `
+
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+
+                    <rect x="0.5" y="0.5" width="23" height="23" rx="3.5" stroke="#F1F1F3"/>
+                    <path d="M9.02426 8.17574C8.78995 7.94142 8.41005 7.94142 8.17574 8.17574C7.94142 8.41005 7.94142 8.78995 8.17574 9.02426L11.1515 12L8.17574 14.9757C7.94142 15.2101 7.94142 15.59 8.17574 15.8243C8.41005 16.0586 8.78995 16.0586 9.02426 15.8243L12 12.8485L14.9757 15.8243C15.2101 16.0586 15.59 16.0586 15.8243 15.8243C16.0586 15.59 16.0586 15.2101 15.8243 14.9757L12.8485 12L15.8243 9.02426C16.0586 8.78995 16.0586 8.41005 15.8243 8.17574C15.59 7.94142 15.2101 7.94142 14.9757 8.17574L12 11.1515L9.02426 8.17574Z" fill="#262626"/>
+
+                </svg>
+
+            ` ,
+
+        ] ,
+        featuresDetails : [
+
+            "Access to selected free courses." ,
+
+            "Limited course materials and resources." ,
+
+            "Basic community support." ,
+
+            "No certification upon completion." ,
+
+            "Ad-supported platform." ,
+
+            "Access to exclusive Pro Plan community forums." ,
+
+            "Early access to new courses and updates."
+
+        ]
+
+    } ,
+
+    {
+
+        id : 2 ,
+        typePlane : "Pro Plan" ,
+        price : "$79" ,
+        featuresIcon : [
+
+            `
+
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+
+                    <rect width="24" height="24" rx="4" fill="#FFF4E6"/>
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M17.364 7.32297C17.6276 7.52379 17.6785 7.90027 17.4777 8.16385L11.0777 16.5639C10.9727 16.7016 10.8134 16.7873 10.6407 16.7989C10.4679 16.8105 10.2986 16.7469 10.1761 16.6245L6.57613 13.0245C6.34181 12.7902 6.34181 12.4103 6.57613 12.176C6.81044 11.9416 7.19034 11.9416 7.42465 12.176L10.5392 15.2905L16.5231 7.4366C16.724 7.17302 17.1004 7.12214 17.364 7.32297Z" fill="#262626"/>
+
+                </svg>
+
+            ` ,
+
+            `
+
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+
+                    <rect width="24" height="24" rx="4" fill="#FFF4E6"/>
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M17.364 7.32297C17.6276 7.52379 17.6785 7.90027 17.4777 8.16385L11.0777 16.5639C10.9727 16.7016 10.8134 16.7873 10.6407 16.7989C10.4679 16.8105 10.2986 16.7469 10.1761 16.6245L6.57613 13.0245C6.34181 12.7902 6.34181 12.4103 6.57613 12.176C6.81044 11.9416 7.19034 11.9416 7.42465 12.176L10.5392 15.2905L16.5231 7.4366C16.724 7.17302 17.1004 7.12214 17.364 7.32297Z" fill="#262626"/>
+
+                </svg>
+
+            ` ,
+
+            `
+
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+
+                    <rect width="24" height="24" rx="4" fill="#FFF4E6"/>
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M17.364 7.32297C17.6276 7.52379 17.6785 7.90027 17.4777 8.16385L11.0777 16.5639C10.9727 16.7016 10.8134 16.7873 10.6407 16.7989C10.4679 16.8105 10.2986 16.7469 10.1761 16.6245L6.57613 13.0245C6.34181 12.7902 6.34181 12.4103 6.57613 12.176C6.81044 11.9416 7.19034 11.9416 7.42465 12.176L10.5392 15.2905L16.5231 7.4366C16.724 7.17302 17.1004 7.12214 17.364 7.32297Z" fill="#262626"/>
+
+                </svg>
+
+            ` ,
+
+            `
+
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+
+                    <rect width="24" height="24" rx="4" fill="#FFF4E6"/>
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M17.364 7.32297C17.6276 7.52379 17.6785 7.90027 17.4777 8.16385L11.0777 16.5639C10.9727 16.7016 10.8134 16.7873 10.6407 16.7989C10.4679 16.8105 10.2986 16.7469 10.1761 16.6245L6.57613 13.0245C6.34181 12.7902 6.34181 12.4103 6.57613 12.176C6.81044 11.9416 7.19034 11.9416 7.42465 12.176L10.5392 15.2905L16.5231 7.4366C16.724 7.17302 17.1004 7.12214 17.364 7.32297Z" fill="#262626"/>
+
+                </svg>
+
+            ` ,
+
+            `
+
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+
+                    <rect width="24" height="24" rx="4" fill="#FFF4E6"/>
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M17.364 7.32297C17.6276 7.52379 17.6785 7.90027 17.4777 8.16385L11.0777 16.5639C10.9727 16.7016 10.8134 16.7873 10.6407 16.7989C10.4679 16.8105 10.2986 16.7469 10.1761 16.6245L6.57613 13.0245C6.34181 12.7902 6.34181 12.4103 6.57613 12.176C6.81044 11.9416 7.19034 11.9416 7.42465 12.176L10.5392 15.2905L16.5231 7.4366C16.724 7.17302 17.1004 7.12214 17.364 7.32297Z" fill="#262626"/>
+
+                </svg>
+
+            ` ,
+
+            `
+
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+
+                    <rect width="24" height="24" rx="4" fill="#FFF4E6"/>
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M17.364 7.32297C17.6276 7.52379 17.6785 7.90027 17.4777 8.16385L11.0777 16.5639C10.9727 16.7016 10.8134 16.7873 10.6407 16.7989C10.4679 16.8105 10.2986 16.7469 10.1761 16.6245L6.57613 13.0245C6.34181 12.7902 6.34181 12.4103 6.57613 12.176C6.81044 11.9416 7.19034 11.9416 7.42465 12.176L10.5392 15.2905L16.5231 7.4366C16.724 7.17302 17.1004 7.12214 17.364 7.32297Z" fill="#262626"/>
+
+                </svg>
+
+            ` ,
+
+            `
+
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+
+                    <rect width="24" height="24" rx="4" fill="#FFF4E6"/>
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M17.364 7.32297C17.6276 7.52379 17.6785 7.90027 17.4777 8.16385L11.0777 16.5639C10.9727 16.7016 10.8134 16.7873 10.6407 16.7989C10.4679 16.8105 10.2986 16.7469 10.1761 16.6245L6.57613 13.0245C6.34181 12.7902 6.34181 12.4103 6.57613 12.176C6.81044 11.9416 7.19034 11.9416 7.42465 12.176L10.5392 15.2905L16.5231 7.4366C16.724 7.17302 17.1004 7.12214 17.364 7.32297Z" fill="#262626"/>
+
+                </svg>
+
+            ` 
+
+        ] ,
+        featuresDetails : [
+
+            "Unlimited access to all courses." ,
+
+            "Unlimited course materials and resources." ,
+
+            "Priority support from instructors." ,
+
+            "Course completion certificates." ,
+
+            "Ad-free experience." ,
+
+            "Access to exclusive Pro Plan community forums." ,
+
+            "Early access to new courses and updates."
+
+        ]
+
+    }
+
+];
+
+for(let i = 0 ; i < pricingData.length ; i++){
+
+    var typeOfPlane = `
+    
+        <p>${pricingData[i].typePlane}</p>
+
+    `;
+
+    var pricePlane = `
+    
+        <p>${pricingData[i].price}</p>
+
+        <span>/month</span>
+
+    `;
+
+    for(let j = 0 ; j < pricingData[i].featuresIcon.length ; j++){
+
+        var priceFeatures = `
+        
+            <div class="available_features_card">
+
+                <div class="available_icon">
+
+                    ${pricingData[i].featuresIcon[j]}
+
+                </div>
+
+                <p>${pricingData[i].featuresDetails[j]}</p>
+
+            </div>
+
+        `;
+
+        if(j == 0){
+
+            var availableFeatures = priceFeatures;
+
+        }
+        else{
+
+            availableFeatures = availableFeatures+priceFeatures;
+
+        }
+
+    };
+
+    const pricingCard = `
+    
+        <div class="pricing_plans_card">
+
+            <div class="free_pro_plane">
+
+                ${typeOfPlane}
+
+            </div>
+
+            <div class="pricing_card_price">
+
+                ${pricePlane}
+
+            </div>
+
+            <div class="available_features">
+
+                <div class="available_features_title">
+
+                    <p>Available Features</p>
+
+                </div>
+
+                <div class="available_features_container">
+
+                    ${availableFeatures}
+
+                </div>
+
+            </div>
+
+            <div class="get_started">
+
+                <a href="">Get Started</a>
+
+            </div>
+
+        </div>
+    
+    `;
+
+    $(".pricing_planes_container").append(pricingCard);
+
+};
+
 // === courses-page-content ===
 
 const coursesData = [
@@ -1094,7 +1403,7 @@ for(let i = 0 ; i < aboutData.length ; i++){
 
         if(j == 0){
 
-            var iconAndData = aboutCard
+            var iconAndData = aboutCard;
 
         }
         else{

@@ -976,7 +976,7 @@ main .main_container .main_buttons .view_pricing{
 
 }
 
-.our_pricing .pricing_planes_container{
+.pricing_planes_container{
 
     width: 100%;
     padding: 50px;
@@ -2413,5 +2413,31 @@ footer .property{
         font-size: 14px !important;
 
     }
+
+}
+
+/* ====================================================================================================== */
+
+/* === === === === our-pricing-page-style === === === */
+
+/* ====================================================================================================== */
+
+/* === our-pricing-style === */
+
+.plane_duration{
+
+    position: relative;
+    width: 232px;
+    height: 69px;
+    margin: auto;
+    margin-bottom: 50px;
+
+}
+
+.pricing_container_cards{
+
+    width: 83.2%;
+    margin: auto;
+    margin-bottom: 80px;
 
 }
