@@ -1732,6 +1732,7 @@ footer .property{
     width: 83.2%;
     display: flex;
     flex-wrap: wrap;
+    align-items: center;
     justify-content: space-between;
 
 }
@@ -2439,5 +2440,276 @@ footer .property{
     width: 83.2%;
     margin: auto;
     margin-bottom: 80px;
+
+}
+
+/* ====================================================================================================== */
+
+/* === === === === contact-us-page-style === === === */
+
+/* ====================================================================================================== */
+
+.contact_container{
+
+    width: 83.2%;
+    margin: auto;
+    margin-bottom: 80px;
+    display: flex;
+    justify-content: space-between;
+    border-radius: 12px;
+    background-color: #FFFFFF;
+
+}
+
+.contact_form{
+
+    width: 870px;
+    padding: 60px;
+    border-right: 1px solid #F1F1F3;
+
+}
+
+.contact_form_Information{
+
+    width: 100%;
+    margin-bottom: 24px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+}
+
+.form_inputs{
+
+    margin-bottom: 24px;
+    display: flex;
+    flex-direction: column;
+
+}
+
+.form_inputs label{
+
+    margin-bottom: 12px;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 150%;
+    color: #262626;
+    font-family: "Be Vietnam Pro", sans-serif;
+
+}
+
+.info_box_input input{
+
+    width: 363px !important;
+
+}
+
+.form_inputs input{
+
+    width: 100%;
+    padding: 20px;
+    font-size: 16px;
+    line-height: 20px;
+    color: #262626;
+    font-family: "Be Vietnam Pro", sans-serif;
+    border-radius: 6px;
+    border: 1px solid #F1F1F3;
+    background-color: #FCFCFD;
+    outline: none;
+
+}
+
+.message_input{
+
+    margin-top: 16px;
+    margin-bottom: 40px !important;
+
+}
+
+.message_input textarea{
+
+    width: 100%;
+    height: 138px;
+    padding: 20px;
+    font-size: 16px;
+    line-height: 20px;
+    color: #262626;
+    font-family: "Be Vietnam Pro", sans-serif;
+    border-radius: 6px;
+    border: 1px solid #F1F1F3;
+    background-color: #FCFCFD;
+    outline: none;
+    resize: none;
+
+}
+
+.submit_contact{
+
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.submit_contact button{
+
+    padding: 14px 20px;
+    border-radius: 6px;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 150%;
+    color: #FFFFFF;
+    font-family: "Be Vietnam Pro", sans-serif;
+    border: none;
+    background-color: #FF9500;
+
+}
+
+.contact_box{
+
+    width: 410px;
+    padding: 60px;
+    display: flex;
+    flex-direction: column;
+
+}
+
+.contact_box_card{
+
+    width: 100%;
+    padding: 30px;
+    margin-bottom: 24px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 6px;
+    background-color: #FCFCFD;
+    border: 1px solid #F1F1F3;
+
+}
+
+.contact_icon{
+
+    width: 44px;
+    height: 44px;
+    margin-bottom: 14px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 6px;
+    border: 1px solid #F1F1F3;
+    background-color: #F7F7F8;
+
+}
+
+.contact_icon a{
+
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.contact_box_card p{
+
+    font-size: 16px;
+    line-height: 150%;
+    font-family: "Be Vietnam Pro", sans-serif;
+
+}
+
+.profiles_links_container{
+
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.middle_icon{
+
+    margin-left: 10px;
+    margin-right: 10px;
+
+}
+
+/* === responsive - style === */
+/* === responsive - style === */
+/* === responsive - style === */
+
+/* === laptop-responsive === */
+
+@media (max-width : 1441px){
+
+    .info_box_input input{
+
+        width: 300px !important;
+
+    }
+
+}
+
+@media (max-width : 1025px){
+
+    .contact_form{
+
+        width: 480px !important;
+
+    }
+
+    .contact_form ,
+    .contact_box{
+
+        padding: 30px !important;
+
+    }
+
+    .info_box_input{
+
+        width: 100%;
+
+    }
+
+    .info_box_input input{
+
+        width: 100% !important;
+
+    }
+
+}
+
+/* === tablet-responsive === */
+
+@media (max-width : 769px){
+
+    .contact_container{
+
+        flex-direction: column !important;
+
+    }
+
+    .contact_form ,
+    .contact_box{
+
+        width: 100% !important;
+
+    }
+
+    .submit_contact button{
+
+        width: 100% !important;
+
+    }
+
+    .contact_box_card p{
+
+        font-size: 13px;
+
+    }
 
 }
