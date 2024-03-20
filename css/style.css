@@ -3156,9 +3156,15 @@ footer .property{
 
     /* === testimonials-side-responsive === */
 
+    .sign_up_testimonials{
+
+        width: 100%;
+
+    }
+
     .testimonials_side{
 
-        width: 98% !important;
+        width: 95% !important;
         padding-right: 0px !important;
         margin-bottom: 50px !important;
 
@@ -3166,13 +3172,13 @@ footer .property{
 
     .testimonials_cards_scroll .testimonials_card{
 
-        width: 250px !important;
+        width: 300px !important;
 
     }
 
     .sign_up_side{
 
-        width: 98%;
+        width: 95%;
         padding: 15px !important;
 
     }
