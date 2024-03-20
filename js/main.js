@@ -45,7 +45,7 @@ let navBar = `
                 <ul>
 
                     <li class="home"><a href="index.html">Home</a></li>
-                    <li class="courses"><a href="courses.html">Courses</a></li>
+                    <li class="courses"><a href="courses.html?id=10">Courses</a></li>
                     <li class="about"><a href="about.html">About Us</a></li>
                     <li class="price"><a href="pricing.html">Pricing</a></li>
                     <li class="contact"><a href="contact.html">Contact</a></li>
@@ -58,9 +58,9 @@ let navBar = `
 
         <div class="signup_login">
 
-            <a class="signup" href="">Sign Up</a>
+            <a class="signup" href="sign_up.html">Sign Up</a>
 
-            <a class="login" href="">Login</a>
+            <a class="login" href="login.html">Login</a>
 
             <div class="navbar_phone">
 
@@ -680,6 +680,8 @@ for(let i = 0 ; i < testimonialsData.length ; i++){
     `;
 
     $(".testimonials_cards_container").append(testimonialsCards);
+
+    $(".testimonials_cards_scroll").append(testimonialsCards);
 
 }
 
@@ -1437,3 +1439,81 @@ for(let i = 0 ; i < aboutData.length ; i++){
     $(".achievements_goals_container").append(aboutCardContainer);
 
 }
+
+// === sign-up-page ===
+// === testimonials-cards-scroll ===
+
+let testimonialsCardWidth = $(".testimonials_cards_scroll .testimonials_card").width();
+let testimonialsCardWidthScroll = testimonialsCardWidth + 81.6;
+let testimonialsCardsScrollContainer = $(".testimonials_cards_scroll").width();
+let clickButtonCount = 0;
+
+$(".next_card").click(function(){
+
+    clickButtonCount++
+
+    let leftScrolling = testimonialsCardWidthScroll*clickButtonCount;
+
+    if(leftScrolling < testimonialsCardsScrollContainer){
+
+        $(".testimonials_cards_scroll").css({"left" : -leftScrolling});
+
+    }
+    else{
+
+        $(".testimonials_cards_scroll").css({"left" : -(testimonialsCardsScrollContainer-testimonialsCardWidthScroll)});
+
+        clickButtonCount--
+
+    }
+
+});
+
+$(".prev_card").click(function(){
+
+    let rightScrolling = testimonialsCardWidthScroll*clickButtonCount;
+
+    if(rightScrolling-testimonialsCardWidthScroll >= 0){
+
+        $(".testimonials_cards_scroll").css({"left" : -(rightScrolling-testimonialsCardWidthScroll)});
+
+        clickButtonCount--
+        console.log(clickButtonCount);
+
+    }
+    else{
+
+        $(".testimonials_cards_scroll").css({"left" : "0"});
+        console.log(clickButtonCount);
+
+    }
+
+});
+
+// ===show-password ===
+
+let clickShowIconCount = 0;
+
+$(".show_password_icon").click(function(){
+
+    clickShowIconCount++
+
+    if(clickShowIconCount %2 == 0){
+
+        $(".show_password_icon span").css({"opacity" : "0" , "height" : "0px"});
+
+        $(".input_type").attr("type" , "password");
+
+    }
+    else{
+
+        $(".show_password_icon span").css({"opacity" : "1" , "height" : "33.9px"});
+
+        $(".input_type").attr("type" , "text");
+
+    }
+
+});
+
+// let x = $(".courses a").attr("href");
+// console.log(+x.split("?")[1].split("=")[1]);
