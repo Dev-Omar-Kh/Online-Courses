@@ -15,7 +15,6 @@
 body{
 
     width: 100%;
-    /* height: 200vh; */
     background-color: #F7F7F8 ;
     overflow-x: hidden !important;
 
@@ -3063,6 +3062,25 @@ footer .property{
 
 }
 
+.password_form_input{
+
+    margin-bottom: 14px !important;
+
+}
+
+.forget_password{
+
+    width: 100%;
+    margin-bottom: 24px;
+    display: flex;
+    justify-content: flex-end;
+    font-size: 18px;
+    line-height: 150%;
+    color: #4C4C4C;
+    font-family: "Be Vietnam Pro", sans-serif;
+
+}
+
 /* === responsive - style === */
 /* === responsive - style === */
 /* === responsive - style === */
@@ -3210,21 +3228,229 @@ footer .property{
 
 }
 
-.password_form_input{
+/* ====================================================================================================== */
 
-    margin-bottom: 14px !important;
+/* === === === === course-details-page-style === === === */
+
+/* ====================================================================================================== */
+
+.content_this_course{
+
+    width: 83.2%;
+    margin: auto;
+    margin-bottom: 80px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
 
 }
 
-.forget_password{
+.content_this_course_cards{
+
+    width: 625px;
+    margin-bottom: 20px;
+    padding: 40px;
+    border-radius: 10px;
+    background-color: #FFFFFF;
+
+}
+
+.content_this_course h3{
 
     width: 100%;
-    margin-bottom: 24px;
     display: flex;
     justify-content: flex-end;
-    font-size: 18px;
-    line-height: 150%;
-    color: #4C4C4C;
+    margin-bottom: 40px;
+    font-size: 60px;
+    font-weight: 700;
+    line-height: 24px;
+    color: #262626;
     font-family: "Be Vietnam Pro", sans-serif;
+
+}
+
+.content_this_course p{
+
+    margin-bottom: 40px;
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 150%;
+    color: #333333;
+    font-family: "Be Vietnam Pro", sans-serif;
+
+}
+
+.content_this_course_details{
+
+    width: 100%;
+
+}
+
+.content_this_course_details_box{
+
+    width: 100%;
+    margin-top: 16px;
+    padding: 20px 24px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 6px;
+    border: 1px solid #F1F1F3;
+
+}
+
+.content_this_course_details_box_p{
+
+    max-width: 370px;
+
+}
+
+.content_this_course_details_box_p p{
+
+    margin-bottom: 2px;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 150%;
+    color: #333333;
+    font-family: "Be Vietnam Pro", sans-serif;
+
+}
+
+.content_this_course_details_box_p span{
+
+    font-size: 14px;
+    line-height: 150%;
+    color: #59595A;
+    font-family: "Be Vietnam Pro", sans-serif;
+
+}
+
+.course_part_duration{
+
+    height: 40px;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 6px;
+    background-color: #F7F7F8;
+
+}
+
+.course_part_duration .duration_icon{
+
+    width: 20px;
+    height: 20px;
+    margin-right: 4px;
+
+}
+
+.course_part_duration p{
+
+    position: relative;
+    top: 20px;
+    font-size: 14px;
+    line-height: 150%;
+    color: #59595A;
+    font-family: "Be Vietnam Pro", sans-serif;
+
+}
+
+/* === responsive - style === */
+/* === responsive - style === */
+/* === responsive - style === */
+
+/* === laptop-responsive === */
+
+@media (max-width : 1441px){
+
+    .content_this_course_cards{
+
+        width: 520px !important;
+        margin-bottom: 100px !important;
+
+    }
+
+}
+
+@media (max-width : 1025px){
+
+    .content_this_course_cards{
+
+        width: 400px !important;
+        margin-bottom: 50px !important;
+        padding: 20px !important;
+
+    }
+
+    .content_this_course_details_box{
+
+        padding: 10px 12px;
+
+    }
+
+    .content_this_course_details_box_p{
+
+        max-width: 200px !important;
+
+    }
+
+}
+
+@media (max-width : 769px){
+
+    .content_this_course_cards{
+
+        width: 100% !important;
+        padding: 30px !important;
+
+    }
+
+    .content_this_course_details_box_p{
+
+        max-width: fit-content !important;
+
+    }
+}
+
+@media (max-width : 426px){
+
+    .content_this_course_cards{
+
+        width: 100% !important;
+        margin-bottom: 20px !important;
+        padding: 30px 10px !important;
+
+    }
+
+    .content_this_course_details_box{
+
+        padding: 5px 6px;
+
+    }
+
+    .content_this_course_details_box_p{
+
+        max-width: 150px !important;
+
+    }
+
+    .content_this_course_details_box_p p{
+
+        font-size: 14px;
+
+    }
+
+    .content_this_course_details_box_p span{
+
+        font-size: 12px;
+
+    }
+
+    .course_part_duration p{
+
+        font-size: 10px !important;
+
+    }
 
 }
