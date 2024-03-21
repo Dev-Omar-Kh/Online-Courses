@@ -4,7 +4,7 @@ let navBar = `
 
     <div class="course_offer">
 
-        <a href="">
+        <a href="courses.html">
 
             <span>Free Courses 🌟 Sale Ends Soon, Get It Now</span>
 
@@ -26,7 +26,7 @@ let navBar = `
 
             <div class="logo">
 
-                <a href="">
+                <a href="index.html">
 
                     <svg width="44" height="45" viewBox="0 0 44 45" fill="none" xmlns="http://www.w3.org/2000/svg">
 
@@ -45,7 +45,7 @@ let navBar = `
                 <ul>
 
                     <li class="home"><a href="index.html">Home</a></li>
-                    <li class="courses"><a href="courses.html?id=10">Courses</a></li>
+                    <li class="courses"><a href="courses.html">Courses</a></li>
                     <li class="about"><a href="about.html">About Us</a></li>
                     <li class="price"><a href="pricing.html">Pricing</a></li>
                     <li class="contact"><a href="contact.html">Contact</a></li>
@@ -138,7 +138,7 @@ let footer = `
 
             <div class="footer_logo">
 
-                <a href="">
+                <a href="index.html">
 
                     <svg width="44" height="44" viewBox="0 0 44 44" fill="none" xmlns="http://www.w3.org/2000/svg">
 
@@ -214,13 +214,13 @@ let footer = `
 
                 <h3 class="footer_links_title">Home</h3>
 
-                <a class="footer_link" href="">Benefits</a>
+                <a class="footer_link" href="index.html?#benefits">Benefits</a>
 
-                <a class="footer_link" href="">Our Courses</a>
+                <a class="footer_link" href="index.html?#courses">Our Courses</a>
 
-                <a class="footer_link" href="">Our Testimonials</a>
+                <a class="footer_link" href="index.html?#testimonials">Our Testimonials</a>
 
-                <a class="footer_link last_link" href="">Our FAQ</a>
+                <a class="footer_link last_link" href="contact.html">Our FAQ</a>
 
             </div>
 
@@ -228,11 +228,11 @@ let footer = `
 
                 <h3 class="footer_links_title">About Us</h3>
 
-                <a class="footer_link" href="">Company</a>
+                <a class="footer_link" href="about.html">Company</a>
 
-                <a class="footer_link" href="">Achievements</a>
+                <a class="footer_link" href="about.html?achievements">Achievements</a>
 
-                <a class="footer_link last_link" href="">Our Goals</a>
+                <a class="footer_link last_link" href="about.html?goals">Our Goals</a>
 
             </div>
 
@@ -242,7 +242,7 @@ let footer = `
 
                 <div class="social_links_container">
 
-                    <a class="social_media_links" href="">
+                    <a class="social_media_links" href="https://www.facebook.com/profile.php?id=100086035253116&sk=friends">
 
                         <svg width="21" height="20" viewBox="0 0 21 20" fill="none" xmlns="http://www.w3.org/2000/svg">
 
@@ -266,7 +266,7 @@ let footer = `
 
                     </a>
 
-                    <a class="social_media_links" href="">
+                    <a class="social_media_links" href="https://twitter.com/omarkhaled66076">
 
                         <svg width="21" height="20" viewBox="0 0 21 20" fill="none" xmlns="http://www.w3.org/2000/svg">
 
@@ -290,7 +290,7 @@ let footer = `
 
                     </a>
 
-                    <a class="social_media_links" href="">
+                    <a class="social_media_links" href="www.linkedin.com/in/omar-khaled-developer2004">
 
                         <svg width="21" height="20" viewBox="0 0 21 20" fill="none" xmlns="http://www.w3.org/2000/svg">
 
@@ -443,7 +443,7 @@ for(let i = 0 ; i < benefitsData.length ; i++){
 
             <div class="benefits_card_btn">
 
-                <a href="">
+                <a href="sign_up.html">
 
                     <svg width="54" height="54" viewBox="0 0 54 54" fill="none" xmlns="http://www.w3.org/2000/svg">
 
@@ -587,7 +587,7 @@ for(let i = 0 ; i < ourCoursesData.length ; i++){
 
             <div class="our_courses_git">
 
-                <a href="">Get it Now</a>
+                <a href="courses.html">Get it Now</a>
 
             </div>
 
@@ -671,7 +671,7 @@ for(let i = 0 ; i < testimonialsData.length ; i++){
 
                 </div>
 
-                <a href="">Read Full Story</a>
+                <a href="index.html">Read Full Story</a>
 
             </div>
 
@@ -1004,7 +1004,7 @@ for(let i = 0 ; i < pricingData.length ; i++){
 
             <div class="get_started">
 
-                <a href="">Get Started</a>
+                <a href="index.html">Get Started</a>
 
             </div>
 
@@ -1022,7 +1022,7 @@ const coursesData = [
 
     {
 
-        id : 1 ,
+        id : 0 ,
         title : "Web Design Fundamentals" ,
         details : "Learn the fundamentals of web design, including HTML, CSS, and responsive design principles. Develop the skills to create visually appealing and user-friendly websites." ,
         images : ["images/course_1.jpeg" , "images/course_det_1.png" , "images/course_1(3).png"] ,
@@ -1035,7 +1035,7 @@ const coursesData = [
 
     {
 
-        id : 2 ,
+        id : 1 ,
         title : "UI/UX Design" ,
         details : "Master the art of creating intuitive user interfaces (UI) and enhancing user experiences (UX). Learn design principles, wireframing, prototyping, and usability testing techniques." ,
         images : ["images/course_2.jpeg" , "images/course_2(2).png" , "images/course_2(3).png"] ,
@@ -1048,7 +1048,7 @@ const coursesData = [
 
     {
 
-        id : 3 ,
+        id : 2 ,
         title : "Mobile App Development" ,
         details : "Dive into the world of mobile app development. Learn to build native iOS and Android applications using industry-leading frameworks like Swift and Kotlin." ,
         images : ["images/course_3.jpeg" , "images/course_3(2).jpeg" , "images/course_3(3).jpeg"] ,
@@ -1061,7 +1061,7 @@ const coursesData = [
 
     {
 
-        id : 4 ,
+        id : 3 ,
         title : "Graphic Design for Beginners" ,
         details : "Discover the fundamentals of graphic design, including typography, color theory, layout design, and image manipulation techniques. Create visually stunning designs for print and digital media." ,
         images : ["images/course_4.png" , "images/course_4(2).jpeg" , "images/course_4(3).jpeg"] ,
@@ -1074,7 +1074,7 @@ const coursesData = [
 
     {
 
-        id : 5 ,
+        id : 4 ,
         title : "Front-End Web Development" ,
         details : "Become proficient in front-end web development. Learn HTML, CSS, JavaScript, and popular frameworks like Bootstrap and React. Build interactive and responsive websites." ,
         images : ["images/course_5.png" , "images/course_5(2).jpg" , "images/course_5(3).png"] ,
@@ -1086,7 +1086,7 @@ const coursesData = [
     }
 
 
-]
+];
 
 let curriculumCount = 1;
 
@@ -1094,7 +1094,7 @@ for(let i = 0 ; i < coursesData.length ; i++){
 
     var coursesTitle = `
     
-        <h4> ${coursesData[i].title} </h4>
+        <h4>${coursesData[i].title}</h4>
 
         <p>
 
@@ -1186,7 +1186,7 @@ for(let i = 0 ; i < coursesData.length ; i++){
 
                     </div>
 
-                    <a href="">View Course</a>
+                    <a href="about_course.html?id=${coursesData[i].id}">View Course</a>
 
                 </div>
 
@@ -1230,6 +1230,329 @@ for(let i = 0 ; i < coursesData.length ; i++){
     `;
 
     $(".courses_cards_container").append(coursesCard);
+
+}
+
+// ===about-course-details-page ===
+
+const aboutCourseData = [
+
+    {
+
+        id : 1 ,
+        boxTitle : "Introduction to UI/UX Design" ,
+        boxContent : [
+
+            "Understanding UI/UX Design Principles", 
+            "Importance of User-Centered Design" , 
+            "The Role of UI/UX Design in Product Development"
+
+        ] ,
+        time : [
+
+            "45 Minutes", 
+            "1 Hour" , 
+            "45 Minutes"
+
+        ] ,
+        lessonNum : [
+
+            "Lesson 01", 
+            "Lesson 02" , 
+            "Lesson 03"
+
+        ]
+
+    } ,
+
+    {
+
+        id : 1 ,
+        boxTitle : "Introduction to UI/UX Design" ,
+        boxContent : [
+
+            "Understanding UI/UX Design Principles", 
+            "Importance of User-Centered Design" , 
+            "The Role of UI/UX Design in Product Development"
+
+        ] ,
+        time : [
+
+            "45 Minutes", 
+            "1 Hour" , 
+            "45 Minutes"
+
+        ] ,
+        lessonNum : [
+
+            "Lesson 01", 
+            "Lesson 02" , 
+            "Lesson 03"
+
+        ]
+
+    } ,
+
+    {
+
+        id : 1 ,
+        boxTitle : "Introduction to UI/UX Design" ,
+        boxContent : [
+
+            "Understanding UI/UX Design Principles", 
+            "Importance of User-Centered Design" , 
+            "The Role of UI/UX Design in Product Development"
+
+        ] ,
+        time : [
+
+            "45 Minutes", 
+            "1 Hour" , 
+            "45 Minutes"
+
+        ] ,
+        lessonNum : [
+
+            "Lesson 01", 
+            "Lesson 02" , 
+            "Lesson 03"
+
+        ]
+
+    } ,
+
+    {
+
+        id : 1 ,
+        boxTitle : "Introduction to UI/UX Design" ,
+        boxContent : [
+
+            "Understanding UI/UX Design Principles", 
+            "Importance of User-Centered Design" , 
+            "The Role of UI/UX Design in Product Development"
+
+        ] ,
+        time : [
+
+            "45 Minutes", 
+            "1 Hour" , 
+            "45 Minutes"
+
+        ] ,
+        lessonNum : [
+
+            "Lesson 01", 
+            "Lesson 02" , 
+            "Lesson 03"
+
+        ]
+
+    } ,
+
+    {
+
+        id : 1 ,
+        boxTitle : "Introduction to UI/UX Design" ,
+        boxContent : [
+
+            "Understanding UI/UX Design Principles", 
+            "Importance of User-Centered Design" , 
+            "The Role of UI/UX Design in Product Development"
+
+        ] ,
+        time : [
+
+            "45 Minutes", 
+            "1 Hour" , 
+            "45 Minutes"
+
+        ] ,
+        lessonNum : [
+
+            "Lesson 01", 
+            "Lesson 02" , 
+            "Lesson 03"
+
+        ]
+
+    } ,
+
+];
+
+let aboutCorseCardsCount = 1;
+
+if(typeof proId !== 'undefined'){
+
+    var proIdNum = +proId;
+
+}
+
+for(let i = 0 ; i < coursesData.length ; i++){
+
+    if(coursesData[i].id == proIdNum){
+
+        $(document).attr("title" , `Online Courses | ${coursesData[i].title} `);
+
+        const aboutCorseTitle = `
+        
+            <h3>${coursesData[i].title}</h3>
+
+            <p>
+
+                ${coursesData[i].details}
+
+            </p>
+
+        `;
+
+        const  aboutCorseImage = `
+        
+            <section class="intro_video">
+    
+                <video src="" poster="${coursesData[i].images[2]}"></video>
+    
+                <span class="start_control">
+    
+                    <svg width="62" height="63" viewBox="0 0 62 63" fill="none" xmlns="http://www.w3.org/2000/svg">
+    
+                        <rect x="4" y="4.5" width="54" height="54" rx="27" fill="white" fill-opacity="0.2"/>
+                        <rect x="2" y="2.5" width="58" height="58" rx="29" stroke="white" stroke-opacity="0.3" stroke-width="4"/>
+                        <path d="M24.7097 19.329C23.0117 18.2585 20.7998 19.4788 20.7998 21.4861V41.5141C20.7998 43.5214 23.0117 44.7417 24.7097 43.6712L40.594 33.6572C42.1807 32.6568 42.1807 30.3433 40.594 29.343L24.7097 19.329Z" fill="white"/>
+    
+                    </svg>
+    
+                </span>
+    
+            </section>
+
+        `;
+
+        for(let j = 0 ; j < aboutCourseData.length ; j++){
+
+            var aboutCorseCardsTitle = `
+            
+                <h3>0${aboutCorseCardsCount++}</h3>
+        
+                <p>${aboutCourseData[j].boxTitle}</p>
+            
+            `;
+
+            // if(j == 0){
+
+            //     var aboutCorseCardsTitle_2 = aboutCorseCardsTitle
+    
+            // }
+            // else{
+    
+            //     aboutCorseCardsTitle_2 = aboutCorseCardsTitle_2+aboutCorseCardsTitle;
+    
+            // }
+
+            for(let k = 0 ; k < aboutCourseData[j].boxContent.length ; k++){
+
+                var aboutCorseCards = `
+                
+                <div class="content_this_course_details_box">
+        
+                    <div class="content_this_course_details_box_p">
+
+                        <p>${aboutCourseData[j].boxContent[k]}</p>
+
+                        <span>${aboutCourseData[j].lessonNum[k]}1</span>
+
+                    </div>
+
+                    <div class="course_part_duration">
+
+                        <div class="duration_icon">
+
+                            <svg width="20" height="21" viewBox="0 0 20 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+
+                                <path d="M10 5.5V10.5H13.75M17.5 10.5C17.5 14.6421 14.1421 18 10 18C5.85786 18 2.5 14.6421 2.5 10.5C2.5 6.35786 5.85786 3 10 3C14.1421 3 17.5 6.35786 17.5 10.5Z" stroke="#4C4C4D" stroke-linecap="round" stroke-linejoin="round"/>
+
+                            </svg>
+
+                        </div>
+
+                        <p>${aboutCourseData[j].time[k]}</p>
+
+                    </div>
+        
+                </div>
+
+                `;
+
+                if(k == 0){
+
+                    var aboutCorseCards2 = aboutCorseCards
+        
+                }
+                else{
+        
+                    aboutCorseCards2 = aboutCorseCards2+aboutCorseCards;
+        
+                }
+
+            }
+
+            var boxCardContent = `
+                
+                    <div class="content_this_course_cards">
+        
+                        ${aboutCorseCardsTitle}
+        
+                        <div class="content_this_course_details">
+        
+                        ${aboutCorseCards2}
+        
+                        </div>
+        
+                    </div>
+
+            `;
+
+            if(j == 0){
+
+                var boxCardContent2 = boxCardContent
+    
+            }
+            else{
+    
+                boxCardContent2 = boxCardContent2+boxCardContent;
+    
+            }
+
+        }
+
+        const aboutCoursePageContent = `
+        
+            <section class="courses_page_title">
+
+                <div class="courses_page_title_container">
+    
+                    ${aboutCorseTitle}
+    
+                </div>
+    
+            </section>
+    
+            <!-- === course-video-introduction === -->
+    
+            ${aboutCorseImage}
+    
+            <!-- === course-content-details === -->
+    
+            <section class="content_this_course">
+    
+                ${boxCardContent2}
+    
+            </section>
+
+        `;
+
+        $(".about_course_page_container").append(aboutCoursePageContent);
+
+    }
 
 }
 
@@ -1478,13 +1801,11 @@ $(".prev_card").click(function(){
         $(".testimonials_cards_scroll").css({"left" : -(rightScrolling-testimonialsCardWidthScroll)});
 
         clickButtonCount--
-        console.log(clickButtonCount);
 
     }
     else{
 
         $(".testimonials_cards_scroll").css({"left" : "0"});
-        console.log(clickButtonCount);
 
     }
 
@@ -1514,6 +1835,3 @@ $(".show_password_icon").click(function(){
     }
 
 });
-
-// let x = $(".courses a").attr("href");
-// console.log(+x.split("?")[1].split("=")[1]);

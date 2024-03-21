@@ -1730,6 +1730,7 @@ footer .property{
 
     width: 83.2%;
     display: flex;
+    flex-direction: row;
     flex-wrap: wrap;
     align-items: center;
     justify-content: space-between;
@@ -3190,7 +3191,7 @@ footer .property{
 
     .testimonials_cards_scroll .testimonials_card{
 
-        width: 300px !important;
+        width: 410px !important;
 
     }
 
@@ -3228,11 +3229,27 @@ footer .property{
 
 }
 
+@media (max-width : 376px){
+
+    .testimonials_cards_scroll .testimonials_card{
+
+        width: 320px !important;
+
+    }
+
+}
+
 /* ====================================================================================================== */
 
 /* === === === === course-details-page-style === === === */
 
 /* ====================================================================================================== */
+
+.about_course_page_container{
+
+    width: 100%;
+
+}
 
 .content_this_course{
 
