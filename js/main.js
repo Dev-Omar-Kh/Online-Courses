@@ -290,7 +290,7 @@ let footer = `
 
                     </a>
 
-                    <a class="social_media_links" href="www.linkedin.com/in/omar-khaled-developer2004">
+                    <a class="social_media_links" href="https://www.linkedin.com/in/omar-khaled-developer2004/">
 
                         <svg width="21" height="20" viewBox="0 0 21 20" fill="none" xmlns="http://www.w3.org/2000/svg">
 
